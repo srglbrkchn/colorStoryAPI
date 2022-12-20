@@ -1,4 +1,30 @@
 GET http://localhost:3000/colors
 
 ### 
-GET http://localhost:3000/colors/ass
+GET http://localhost:3000/colors/6391de3a83920a34afce670a
+
+
+###
+
+POST http://localhost:3000/colors
+Content-Type: application/json
+
+{
+    "name": "khaki",
+    "hex": "#F0E68C",
+    "rgb": "rgb(0.9, 0.9, 0.5)",
+    "meaning": "safety, trust"
+}
+
+###
+DELETE http://localhost:3000/colors/6391de3a83920a34afce670a
+
+###
+
+PATCH http://localhost:3000/colors/6391de3a83920a34afce670a
+
+Content-Type: application/json
+
+{
+    "name": "Souly!"
+}
